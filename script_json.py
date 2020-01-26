@@ -19,7 +19,7 @@ with open('books.csv') as books:
 dict_out = {}
 for i in users:
     key_dict = ['name', 'gender', 'address', 'books']
-    value_dict = [i['name'], i['gender'], i['address'], [row_dict]]
+    value_dict = [i['name'], i['gender'], i['address'],[row_dict]]
     for x, y in zip(key_dict, value_dict):
         dict_out[x] = y
         json_dict = json.dumps(dict_out, indent=4)
