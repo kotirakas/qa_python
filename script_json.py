@@ -17,7 +17,7 @@ for i in users:
         dict_out[x] = y
         json_dict = json.dumps(dict_out, indent=4)
     print(json_dict)
-# print(dict_out)
 
-# with open("res.json", 'a') as write_file:
-#     json.dump(dict_out, write_file, indent=4)
+
+    with open("res.json", 'a') as write_file:
+       json.dump(dict_out, write_file, indent=4)
